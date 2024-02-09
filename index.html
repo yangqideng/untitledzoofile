@@ -28,7 +28,7 @@
     function change() {
       var picid = document.getElementById('picid');
       var textid = document.getElementById('textid');
-      var num1 = getRandomInt(111);
+      var num1 = getRandomInt(160);
       var num2 = getRandomInt(9);
 
       picid.src = "pic/1-" + num1 + ".JPG";
@@ -46,7 +46,7 @@
   <style media="screen">
 
     body {
-      background-color: black;
+      background-image:image(BG.JPG);
       margin: 0;
       padding: 0;
       height: 100vh;
@@ -74,6 +74,11 @@
       height: 100%;
     }
 
+    .texts img {
+      object-fit:cover;
+      height: 100vh;
+    }
+
     #picid, #textid {
       width: 100%;
     }
@@ -99,12 +104,6 @@
         height: 100%;
       }
 
-      #textid {
-        order: 0;
-        position: relative;
-        left: 0;
-        top: 0;
-      }
     }
 
   </style>
