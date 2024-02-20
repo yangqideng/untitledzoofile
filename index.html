@@ -29,7 +29,7 @@
       var picid = document.getElementById('picid');
       var textid = document.getElementById('textid');
       var num1 = getRandomInt(160);
-      var num2 = getRandomInt(9);
+      var num2 = getRandomInt(12);
 
       picid.src = "pic/1-" + num1 + ".JPG";
       textid.src = "text/2-" + num2 + ".png";
@@ -69,14 +69,9 @@
       width: 100%;
     }
 
-    .pics img {
+    .pics img .texts img {
       object-fit: cover;
       height: 100%;
-    }
-
-    .texts img {
-      object-fit:cover;
-      height: 100vh;
     }
 
     #picid, #textid {
